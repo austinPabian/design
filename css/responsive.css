@@ -16,6 +16,10 @@ header .nav-links {
 
 /*=============  MEDIA 1200px -1399px   =============*/
 @media(min-width:1200px) and (max-width:1399px) {
+.container {
+	padding-left: 95px;
+}    
+    
         header nav{
 	padding-top:2%;
 }
@@ -34,6 +38,10 @@ header .nav-links {
 }
 /*=============  MEDIA 768px - 991px   =============*/
 @media(min-width:768px) and (max-width:991px) {
+.container {
+	padding-left: 95px;
+}    
+    
 .portfolio .items li {
 	width: 50%;
 }
