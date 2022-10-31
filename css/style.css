@@ -118,10 +118,9 @@ a {
 }
 
 
-.pabicon {
-    width:2em;
-    font-size: 2em;
-    color: #333;
+.ap_logo {
+    width:20%;
+    padding-bottom: 1em
     /*
     -webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
@@ -131,7 +130,7 @@ a {
 }
 
 /*
-.pabicon:hover {
+.ap_logo:hover {
     color:#cc9f62;
 }
 */
@@ -594,7 +593,7 @@ header .share .open-navigation {
 .portfolio {
 	position: relative;
 	padding-left: 80px;
-	width:100%;
+	width: 100%;
 	overflow:hidden;
 	height: 100%;
 }
