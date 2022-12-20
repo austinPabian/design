@@ -1263,7 +1263,7 @@ progress {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 90%;
   padding-right: calc(var(--boots5-gutter-x) * .5);
   padding-left: calc(var(--boots5-gutter-x) * .5);
   margin-top: var(--boots5-gutter-y);
