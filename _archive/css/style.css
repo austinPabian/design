@@ -611,7 +611,6 @@ header .share .open-navigation {
 	width:100%;
 }
 .portfolio li .hover-sec {
-	border: 12px solid;
 	border-color: transparent;
 	position: absolute;
 	top: 5%;
@@ -628,7 +627,7 @@ header .share .open-navigation {
 }
 .portfolio .hover-sec a.hover-in {
 	position: absolute;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.85);
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -685,7 +684,8 @@ header .share .open-navigation {
 	margin-top: 20px;
 }
 .portfolio-single .port-top-sec {
-	height: 40px;
+	background: #fff;
+	height: 90px;
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 80px;
