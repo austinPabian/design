@@ -616,10 +616,10 @@ header .share .open-navigation {
     border-radius: 10%;
 	position: absolute;
     vertical-align: middle;
+	top: 5%;
 	left: 0px;
-	width: 90%;
-	height: 90%;
-    margin: 5%;
+	width: 100%;
+	height: 100%;
 	opacity: 0;
 	overflow: hidden;
 	-webkit-transition: all 0.1s ease-in-out;
@@ -645,6 +645,7 @@ header .share .open-navigation {
 	color: #333;
     letter-spacing: normal;
 }
+
 .portfolio .cat {
     font-family: 'Work Sans';
 	font-weight: 600;
