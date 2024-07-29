@@ -598,7 +598,7 @@ header .share .open-navigation {
 	width: 100%;
 	overflow:hidden;
 	height: 100%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 .portfolio ul{
     margin-bottom: 0;
@@ -620,9 +620,9 @@ header .share .open-navigation {
 	position: absolute;
     vertical-align: middle;
 	left: 0px;
-	width: 70%;
-	height: 70%;
-    margin: 12.5%;
+	width: 90%;
+	height: 90%;
+    margin: 5%;
 	opacity: 0;
 	overflow: hidden;
 	-webkit-transition: all 0.1s ease-in-out;
