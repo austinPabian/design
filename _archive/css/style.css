@@ -598,7 +598,6 @@ header .share .open-navigation {
 	width: 100%;
 	overflow:hidden;
 	height: 100%;
-    padding-top: 1%;
 }
 .portfolio ul{
     margin-bottom: 0;
@@ -609,9 +608,7 @@ header .share .open-navigation {
     
 }
 .portfolio li img {
-	width:90%;
-    border-radius: 10%;
-    margin: 2%
+	width:100%;
 }
 .portfolio li .hover-sec {
 	border: 0px solid;
