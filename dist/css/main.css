@@ -1,14 +1,14 @@
 /* CUSTOM CSS */
 
-@media screen (max-width: 767px) {
+@media (max-width: 768px) {
 
 .jumbotron {
-    margin-top:25%;
+    margin-top:25%!important;
 }
 }
 
 
-@media screen (min-width: 768px) {
+@media (min-width: 769px) {
 
 .jumbotron {
     margin-top:15%;
