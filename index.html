@@ -2765,6 +2765,21 @@ Unplanned branding meetings turned unplanned photoshoot in the famous East Lansi
             }
         });
     </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('click', function(event) {
+            const modal = document.querySelector('.modal'); // Replace with your modal's selector
+            if (modal && modal.classList.contains('open') && event.clientY < 50) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
       
       </body>
 <script src="dist/js/all.js"></script>

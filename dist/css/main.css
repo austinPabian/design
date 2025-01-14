@@ -1,6 +1,6 @@
 /* CUSTOM CSS */
 
-@media (max-width: 576px) {
+@media (max-width: 1023px) {
 
 .jumbotron {
     margin-top:25%;
@@ -8,7 +8,7 @@
 }
 
 
-@media (min-width: 577px) {
+@media (min-width: 1024px) {
 
 .jumbotron {
     margin-top:15%;
