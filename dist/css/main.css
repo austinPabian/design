@@ -1,5 +1,20 @@
 /* CUSTOM CSS */
 
+@media (max-width: 576px) {
+
+.jumbotron {
+    margin-top:25%;
+}
+}
+
+
+@media (min-width: 577px) {
+
+.jumbotron {
+    margin-top:15%;
+}
+}
+
 .tracked {
     letter-spacing: .5rem;
 }

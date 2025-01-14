@@ -39,7 +39,7 @@
     <meta name="theme-color" content="#fafafa">
 
     </head>
-
+    
 <body class="with-header position-relative" data-spy="scroll" data-target="#sections-nav" data-offset="80">
 	<header class="header">
 		<div class="container-fluid-limited d-flex align-items-center justify-content-between">
@@ -145,7 +145,6 @@
 					<section id="section-top" class="section section-sub-header animation interaction-in">
 						<div class="section-body">
 							<div class="jumbotron jumbotron-fluid pt-6 pt-lg-8 pb-0 mb-0">
-                                <div class="jumbotron-img animation-translate animation-item-1" alt=""></div>
 								<p class="tracked animation-translate animation-item-3 copy-tracked">WELCOME TO</p>
                                 <h1 class="display-1 display-animated display-animated-in animation-translate animation-item-2">Austin Pabian's Design Café</h1>
 								<p class="article animation-translate animation-item-3">1% Talent. 99% Hot gas. <br/> I make graphics and wearable things. <br/>Sometimes I take photos. <br/>Keep it simple—brevity is a virtue.</p>
@@ -401,7 +400,7 @@
                                             </h4>
 
 											<p class="card-text">
-												Expert in Adobe Illustrator, with experience in brand design, building advertising assets, and creating myriad marketing materials. Skilled in vector-based design for print and digital use
+												Expert in Adobe Illustrator, with experience in brand design, building advertising assets, and creating a myriad of marketing materials. Skilled in vector-based design for print and digital use
 											</p>
 										</div>
 									</div>
@@ -415,7 +414,7 @@
                                             </h4>
 
 											<p class="card-text">
-                                                Expert in Adobe Photoshop, specializing in detailed photo editing, manipulation, and image composition for both print and digital projects.	Experience includes Adobe Lightroom and additional derivatives.										</p>
+                                                Expert in Adobe Photoshop, specializing in detailed photo editing, manipulation, and image composition for both print and digital projects.	Experience includes Adobe Lightroom and additional applications.										</p>
 										</div>
 									</div>
 								</div>
@@ -480,7 +479,7 @@ Skilled in CSS3 for designing and styling responsive, visually appealing website
                                             </h4>
 
 											<p class="card-text">
-												Experienced in using GitHub to manage locally developed websites and seamlessly launch them to servers with the GitHub Desktop app—the best way to deploy a fresh site update.
+												Experienced in using GitHub to manage locally developed websites and seamlessly deploy them to servers with the GitHub Desktop app—the best way to deploy a fresh site update.
 											</p>
 										</div>
 									</div>
@@ -538,7 +537,7 @@ Skilled in CSS3 for designing and styling responsive, visually appealing website
                                             </h4>
 
 											<p class="card-text">
-												Proficient in using ChatGPT to generate ideas, streamline workflows, and assist with content creation, problem-solving, and brainstorming across various projects. Experienced in leveraging ChatGPT for troubleshooting issues, dissecting code, and finding efficient solutions to development challenges.
+												Proficient in using ChatGPT to generate ideas, streamline workflows, and assist with content creation, problem-solving, and brainstorming across various creative projects. Experienced in leveraging ChatGPT for troubleshooting issues, dissecting code, and finding efficient solutions to development challenges.
 											</p>
 										</div>
 									</div>
@@ -2109,7 +2108,7 @@ For every asset that sees the word "final", countless others collect digital dus
 							<div class="col-12 col-lg-3">
 							<h4 class="mb-1">
                                 Washington NFL Concept</h4>
-                                <p class="mb-5">While the Washington Football Team was deliberating on a new name and the internet loved the idea of the "Red Wolves," I decided to ilustrate a logo mascot for consideration. The ears of the wolf pay homage to the snow-capped mountians, and the "W" shaped shading in the scruff of the neck prominently represents the "W" for "Washington."
+                                <p class="mb-5">While the Washington Football Team was deliberating on a new name and the internet loved the idea of the "Red Wolves," I decided to illustrate a logo mascot for consideration. The ears of the wolf pay homage to the snow-capped mountains, and the "W" shaped shading in the scruff of the neck prominently represents the "W" for "Washington."
                                     </p>
                             <p class="article-tags">2020</p>
                             
@@ -2754,6 +2753,18 @@ Unplanned branding meetings turned unplanned photoshoot in the famous East Lansi
 		</div>
 	</div>
     
+     <!-- Scroll-to-Top Script -->
+    <script>
+        document.addEventListener('click', (event) => {
+            const modal = document.querySelector('.modal'); // Replace with your modal's selector
+            if (modal && modal.classList.contains('open') && event.clientY < 50) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
       
       </body>
 <script src="dist/js/all.js"></script>
