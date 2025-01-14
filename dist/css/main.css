@@ -39,8 +39,10 @@ body.modal-open {
 }
 }
 
+@media (min-width: 1387px) {
 .jumbotron-margin {
     margin-top:16vh;
+  }
 }
 
 .tracked {
