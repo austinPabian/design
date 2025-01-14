@@ -1,0 +1,30 @@
+// Define variables for the customizable parts
+$font-family-work-sans: "Work Sans", serif;
+$font-optical-sizing: auto;
+$default-font-style: normal;
+$letter-spacing-tracked: 2rem;
+$breakpoint-small: 575.98px;
+
+// Mixin for reusable font styles
+@mixin work-sans($uniquifier, $weight) {
+  font-family: $font-family-work-sans;
+  font-optical-sizing: $font-optical-sizing;
+  font-weight: $weight;
+  font-style: $default-font-style;
+}
+
+// Apply styles
+.work-sans-<uniquifier> {
+  @include work-sans("<uniquifier>", <weight>);
+}
+
+.copy-tracked {
+  letter-spacing: $letter-spacing-tracked;
+}
+
+// Media query for small screens
+@media (max-width: $breakpoint-small) {
+  .sections-nav-link {
+    font-size: 2.5rem;
+  }
+}
