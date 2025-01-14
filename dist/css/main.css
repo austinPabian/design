@@ -11,7 +11,7 @@
 @media (min-width: 769px) {
 
 .jumbotron {
-    margin-top:15%;
+    margin-top:15%!important;
 }
 }
 
