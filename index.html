@@ -2757,10 +2757,9 @@ Unplanned branding meetings turned unplanned photoshoot in the famous East Lansi
      <!-- Scroll-to-Top Script -->
 <script>
 
-document.addEventListener('click', function (event) {
-    // Find any open modal (Bootstrap adds "show" to open modals)
-    const openModal = document.querySelector('.modal.show');
-    if (openModal && event.clientY < 50) {
+    document.addEventListener('click', function (event) {
+    const openModal = document.querySelector('.modal.show'); // Select currently open modal
+    if (openModal && event.clientY < 50) { // Detect tap at the top of the screen
         const modalBody = openModal.querySelector('.modal-body');
         if (modalBody) {
             modalBody.scrollTo({
@@ -2768,13 +2767,14 @@ document.addEventListener('click', function (event) {
                 behavior: 'smooth',
             });
         }
+        event.preventDefault(); // Prevent any other scrolling behavior
+        event.stopPropagation(); // Ensure it doesn’t propagate to the body
     }
 });
 
-// Add touch support for mobile devices
 document.addEventListener('touchstart', function (event) {
-    const openModal = document.querySelector('.modal.show');
-    if (openModal && event.touches[0].clientY < 50) {
+    const openModal = document.querySelector('.modal.show'); // Select currently open modal
+    if (openModal && event.touches[0].clientY < 50) { // Detect tap at the top of the screen
         const modalBody = openModal.querySelector('.modal-body');
         if (modalBody) {
             modalBody.scrollTo({
@@ -2782,6 +2782,8 @@ document.addEventListener('touchstart', function (event) {
                 behavior: 'smooth',
             });
         }
+        event.preventDefault(); // Prevent any other scrolling behavior
+        event.stopPropagation(); // Ensure it doesn’t propagate to the body
     }
 });
 

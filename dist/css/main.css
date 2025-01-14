@@ -1,9 +1,20 @@
 /* CUSTOM CSS */
 
+/* Prevent body from scrolling when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Ensure modal-body is the scrollable container */
+.modal-body {
+    max-height: calc(100vh - 100px); /* Adjust for your modal size */
+    overflow-y: auto;
+}
+
 @media screen and (max-width: 768px) {
 
 .jumbotron-margin {
-    margin-top:20vh!important;
+    margin-top:15vh!important;
   }
 }
 
