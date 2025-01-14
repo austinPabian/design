@@ -2768,23 +2768,21 @@ Unplanned branding meetings turned unplanned photoshoot in the famous East Lansi
     
    <script>
     document.addEventListener('click', function (event) {
-        // Get all open modals (with the "show" class)
-        const openModals = document.querySelectorAll('.modal.show');
-
-        openModals.forEach(modal => {
-            // Check if the click is at the top of the screen
-            if (event.clientY < 50) {
-                // Scroll the modal body to the top
-                const modalBody = modal.querySelector('.modal-body');
-                if (modalBody) {
-                    modalBody.scrollTo({
-                        top: 0,
-                        behavior: 'smooth',
-                    });
-                }
-            }
+    const modal = document.querySelector('.modal.show'); // Target any active modal
+    if (modal && event.touches?.length === 1 && event.touches[0].clientY < 50) {
+        modal.querySelector('.modal-body').scrollTo({
+            top: 0,
+            behavior: 'smooth',
         });
-    });
+    } else if (modal && event.clientY < 50) {
+        // Fallback for devices that don't support `touches`
+        modal.querySelector('.modal-body').scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+});
+
 </script>
 
 
