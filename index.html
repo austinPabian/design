@@ -2755,33 +2755,32 @@ Unplanned branding meetings turned unplanned photoshoot in the famous East Lansi
     
      <!-- Scroll-to-Top Script -->
     <script>
-        document.addEventListener('click', (event) => {
-            const modal = document.querySelector('.modal'); // Replace with your modal's selector
-            if (modal && modal.classList.contains('open') && event.clientY < 50) {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    </script>
-    
-   <script>
-    document.addEventListener('click', function (event) {
-    const modal = document.querySelector('.modal.show'); // Target any active modal
-    if (modal && event.touches?.length === 1 && event.touches[0].clientY < 50) {
-        modal.querySelector('.modal-body').scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    } else if (modal && event.clientY < 50) {
-        // Fallback for devices that don't support `touches`
-        modal.querySelector('.modal-body').scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
+       document.addEventListener('click', function (event) {
+    const openModal = document.querySelector('.modal.show');
+    if (openModal && event.clientY < 50) {
+        const modalBody = openModal.querySelector('.modal-body');
+        if (modalBody) {
+            modalBody.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
     }
 });
+
+document.addEventListener('touchstart', function (event) {
+    const openModal = document.querySelector('.modal.show');
+    if (openModal && event.touches[0].clientY < 50) {
+        const modalBody = openModal.querySelector('.modal-body');
+        if (modalBody) {
+            modalBody.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+    }
+});
+
 
 </script>
 
